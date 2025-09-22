@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #240226;
+  --secondary-color: #2980b9;
+  --text-color: #ffffff;
+  --light-gray-color: #eeeeee;
+  --gap: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}

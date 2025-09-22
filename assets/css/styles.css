@@ -131,12 +131,31 @@
   counter-reset: grid-counter;
 }
 
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
 .grid h3 {
   font-size: 3.5rem;
   position: relative;
   padding-left: 5rem;
   padding-bottom: 3rem;
 }
+.grid-services h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+  position: relative;
+  padding-bottom: 3rem;
+}
+.grid-services h3:hover {
+  color: var(--light-gray-color);
+  transform: scale(1.1);
+  transition: all 400ms ease-in-out;
+}
+
 .grid h3::before {
   counter-increment: grid-counter;
   content: counter(grid-counter);

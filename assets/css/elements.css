@@ -59,3 +59,35 @@ h6 {
 p {
   margin-bottom: 4rem;
 }
+
+.responsive-table {
+  overflow-x: auto;
+  overflow: hidden;
+}
+
+table {
+  min-width: 360px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+table th, table td{
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  border: 0.1rem solid var(--light-gray-color);
+}
+
+tfoot td, table th{
+  font-size: 1.7rem;
+  text-align: center;
+  white-space: nowrap;
+  background: var(--light-gray-color);
+}

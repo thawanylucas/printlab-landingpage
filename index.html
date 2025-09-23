@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>PrintLab</title>
+    <link rel="shortcut icon" href="assets/img/icon2.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -20,12 +21,12 @@
 
     <aside class="sidebar white-bg">
         <div class="main-content sidebar-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
              <a href="#intro">PRINTLAB</a>
             </h1>
 
             <nav>
-                <ul onclick="getElementById('close-menu').removeAttribute('checked')">
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">início</a></li>
                     <li><a href="#grid-one">criação</a></li>
                     <li><a href="#gallery">galeria</a></li>
@@ -251,7 +252,11 @@
     </section>
 
     <footer id="footer" class="footer white-bg">
-        <p><a rel="nofollow" target="_blank" href="https://github.com/thawanylucas">Feito por Thawany Lucas &hearts;</a></p>
+        <p><a rel="nofollow" target="_blank" href="https://github.com/thawanylucas">GitHub &hearts;</a></p>
     </footer>
+
+    <a class="back-to-top" href="#intro">
+        <img src="assets/img/arrow-up.svg" alt="">
+    </a>
 </body>
 </html>

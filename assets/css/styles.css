@@ -4,7 +4,6 @@
   background-position: center center;
   color: var(--text-color);
 }
-
 .white-bg {
   background-color: var(--text-color);
   color: var(--primary-color);
@@ -21,6 +20,7 @@
 }
 
 .sidebar {
+  padding-bottom: -5rem;
   background-color: var(--text-color);
   color: var(--primary-color);
   position: fixed;
@@ -107,7 +107,7 @@
 
 .top3-content {
   max-width: 64rem;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -262,6 +262,9 @@
 .send-button {
   display: flex;
   justify-content: center;
+}
+.close-menu{
+  display: none;
 }
 
 .footer {

@@ -10,8 +10,14 @@
     <link rel="stylesheet" href= "assets/css/vars.css">
     <link rel="stylesheet" href= "assets/css/elements.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href= "assets/css/media-query.css">
 </head>
 <body>
+
+    <input type="checkbox" role="button" id="close-menu" 
+    class="close-menu" aria-label="Abrir/Fechar Menu">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
     <aside class="sidebar white-bg">
         <div class="main-content sidebar-content">
             <h1>
@@ -19,7 +25,7 @@
             </h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').removeAttribute('checked')">
                     <li><a href="#intro">início</a></li>
                     <li><a href="#grid-one">criação</a></li>
                     <li><a href="#gallery">galeria</a></li>
